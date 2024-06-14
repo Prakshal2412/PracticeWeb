@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import DesktopNav from './DesktopNav';
+import logo from "/Veegify/PracticeWeb/Frontend/src/assets/urbanLogo.png"
 
 const Header = () => {
     const [hideLeft,setHideLeft] = useState("-left-[1000px]");
@@ -14,7 +15,7 @@ const Header = () => {
   return (
     <div>
         <div className='max-[900px]:hidden'>
-            <DesktopNav menuItems={menuItems}/>
+            <DesktopNav menuItems={menuItems} Logo={logo}/>
         </div>
         <div className='min-[900px]:hidden'>MobileView</div>
     </div>
