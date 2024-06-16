@@ -8,15 +8,22 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Home from './pages/home/Home.jsx';
+import ErrorPage from './components/ErrorPage.jsx';
+import CategoryPage from './pages/category/CategoryPage.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    errorElement:<ErrorPage/>,
     children:[
       {
         path:"/",
         element:<Home/>
+      },
+      {
+        path:"/categories/:category",
+        element:<CategoryPage/>
       }
     ]
   },
