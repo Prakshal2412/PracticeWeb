@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import axios from 'axios';
 import CategoryWrapper from './CategoryWrapper';
-import { Axios } from 'axios';
+import { useParams } from 'react-router-dom';
 
 const CategoryPage = () => {
     const {category} =useParams();
+    console.log(category)
     const [items,setItems]=useState([]);
     const [loading,setLoading] =useState(false);
     const [error,setError]=useState(null);
@@ -14,12 +15,13 @@ const CategoryPage = () => {
         setLoading(true);
 
         try{
-          const response=await Axios.get(`http://localhost:5000/api/categories/${category}`);
+          const response=await axios.get(`http://localhost:5000/api/categories/${category}`);
           setItems(response.data);
         }catch(error){
           setError(error.message||"Error Loading category");
         }
       }
+      fetchCategoryData()
     },[category])
 
   return (
@@ -32,9 +34,7 @@ const CategoryPage = () => {
      <ul>
       {
         items && items?.map(item=>(
-          <li key={items._id}>
-            {item.name}
-          </li>
+          <li key={items._id}>{item.name}</li>
         ))
       }
      </ul>

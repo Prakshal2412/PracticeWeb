@@ -28,7 +28,7 @@ async function main() {
   const CategoryRoutes =require("./src/routes/categoryRoute")
 
   app.use('/api',ItemRoutes)
-  app.use('/api/',CategoryRoutes)
+  app.use('/api',CategoryRoutes)
 
 
 app.listen(port, () => {
