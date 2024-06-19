@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { IoSearchOutline } from 'react-icons/io5'
 import { useParams } from 'react-router-dom'
 import axios from 'axios';
+import Card from "../components/Card"
 import { useEffect } from 'react';
 const Search = () => {
     const searchText =useParams();
@@ -48,10 +49,10 @@ const Search = () => {
                 <input className='outline-none w-full placeholder:text-[#1b2629]' name='query' type="search" placeholder='Search for a recipe' id='search' required="" />
         </div>
 
-        <ul>
+        <ul className='mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8'>
             {
                 results && results.map((item)=>(
-                    <li key={item._id}>{item.name }</li>
+                    <Card item={item} key={item._id}>{item.name }</Card>
                 ))
             }
         </ul>

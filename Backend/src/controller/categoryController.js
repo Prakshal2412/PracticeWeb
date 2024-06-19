@@ -13,7 +13,7 @@ const getCategory = async(req,res)=>{
             const items=await Item.find({menuId:categoryData.menuId})
             console.log(items)
             res.status(200).json(items) 
-    }catch(err){
+    }catch(error){
         res.status(500).json({message:"No category specified"});
     }
 }
