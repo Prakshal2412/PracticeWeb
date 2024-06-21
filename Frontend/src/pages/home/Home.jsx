@@ -2,6 +2,11 @@ import React from 'react'
 import Hero from '../../components/Hero'
 import CategoryWrapper from '../category/CategoryWrapper'
 import FeaturedSection from '../home/FeaturedSection'
+import LatestRecipe from './LatestRecipe'
+import NewsLetter from './NewsLetter'
+import AboutSection from './AboutSection'
+import CompanyLogo from './CompanyLogo'
+import Subscription from './Subscription'
 
 const Home = () => {
   return (
@@ -14,6 +19,11 @@ const Home = () => {
 
       {/* {Other Components} */}
       <FeaturedSection/>
+      <LatestRecipe/>
+      <NewsLetter/>
+      <AboutSection/>
+      <CompanyLogo/>
+      <Subscription/>
     </div>
   )
 }
