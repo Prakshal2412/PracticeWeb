@@ -27,16 +27,29 @@ const SingleProduct = () => {
                         </li>
                         <li className='pl-3 mt-3'>
                             <p>
-                                <span>Preparation: </span><span>25 minutes</span>
+                                <span>Preparation: </span><span>10 minutes</span>
                             </p>
                         </li>
                         <li className='pl-3 mt-3'>
                             <p>
-                                <span>Cooking: </span><span>{item?.more.cook_time}</span>
+                                <span>Cooking: </span><span>15 Minutes</span>
                             </p>
                         </li>
                     </ul>
                 </article>
+                <div className="mt-5">
+                    <h3 className='text-xl font-semibold ml-2'>Preparation time</h3>
+                    <ul className='list-disc marker:text-blue-500 mt-4 ml-6 text-[#1b2629] marker:align-middle'>
+                        {
+                            item?.ingredients.map((ingredient,index)=>(
+                                <li key={index} className='pl-4 mt-2'>
+                                    <span>{ingredient?.name}: </span>
+                                    <span>{ingredient?.quantity}</span>
+                                </li>
+                            ))
+                        }
+                    </ul>
+                </div>
             </div>
             </div>
         </article>

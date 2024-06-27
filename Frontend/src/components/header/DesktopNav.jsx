@@ -11,7 +11,7 @@ const DesktopNav = ({menuItems, Logo}) => {
             {
                 menuItems?.map((menu,index)=>(
                     <li key={index}>
-                        <Link to="{menu}" className='font-medium capitalize text-secondary'>{menu}</Link>
+                        <Link to={menu} className='font-medium capitalize text-secondary'>{menu}</Link>
                     </li>
                 ))
             }
