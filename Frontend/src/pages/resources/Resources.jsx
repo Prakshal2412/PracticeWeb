@@ -50,8 +50,8 @@ const Resources = () => {
                             <img src={blog.imgSrc} alt={blog.title} />
                             <h3 className='text-2xl font-semibold'>{blog.title}</h3>
                             <p className='text-sm'>{blog.date}</p>
-                            {/* <p className='text-sm'>{blog.views}</p> */}
-                            {/* <p className='text-sm'>{blog.category}</p> */}
+                            <p className='text-sm'>{blog.views}</p>
+                            <p className='text-sm'>{blog.category}</p>
                         </div>
                     ))
                 }
