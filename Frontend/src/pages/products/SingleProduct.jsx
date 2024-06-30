@@ -18,7 +18,7 @@ const SingleProduct = () => {
             </picture>
             <div className='px-8'>
                 <h1 className='text-4xl mt-12 text-[#1b2629]'>{item.name}</h1>
-                <p className='mt-6'>Lorem ipsum dolor elit. Aut nesciunt ab autem ullam dolorum similique saepe error quidem nam.</p>
+                <p className='mt-6'>Lorem ipsum dolor Lorem, ipsum dolor sit amet  elit. Aut nesciunt ab autem ullam dolorum similique saepe error quidem nam.</p>
 
                 <article className='bg-rose-50 mt-6 p-5 rounded'>
                     <h2 className='text-xl font-semibold ml-2'>Preparation time</h2>
