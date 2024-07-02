@@ -20,7 +20,7 @@ const Subscription = () => {
                 Email Address
             </label>
             <input className='flex-auto rounded-md border-0 bg-white px-3 shadow-sm sm:text-sm sm:leading-6 focus:outline-btnColor' name="email" autoComplete="email" required type="email" placeholder='Enter your email'/>
-            <button className='flex-none rounded-md bg-black px-8 py-4 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-btnColor hover:border' type='Submit'>Subscribe</button>
+            <button className='flex-none rounded-md bg-black px-8 py-4 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-btnColor hover:border' type='Submit'>Subscribe Us</button>
             
             </div>
 
