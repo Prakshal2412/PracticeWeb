@@ -17,7 +17,7 @@ const Subscription = () => {
                 </div>
                 <div className='sm:w-1/2 mt-6 flex flex-col sm:flex-row gap-4'>
             <label htmlFor="email-address" className='sr-only'>
-                Email Address
+                Email 
             </label>
             <input className='flex-auto rounded-md border-0 bg-white px-3 shadow-sm sm:text-sm sm:leading-6 focus:outline-btnColor' name="email" autoComplete="email" required type="email" placeholder='Enter email'/>
             <button className='flex-none rounded-md bg-black px-8 py-4 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-btnColor hover:border' type='Submit'>Subscribe Us</button>
