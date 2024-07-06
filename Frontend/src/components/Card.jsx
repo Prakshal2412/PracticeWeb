@@ -40,7 +40,7 @@ const Card = ({ item }) => {
                                 <GoClock />
                                 <span className='ml-1'>
                                     {/* {item?.more.prep_time} */}
-                                    10 minutes
+                                    20 minutes
                                 </span>
                                 
                             </div>
