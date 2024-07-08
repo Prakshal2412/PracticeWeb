@@ -8,7 +8,7 @@ const AboutSection = () => {
         <div className='text-start sm:w-1/2'>
           <h2 className='text-5xl font-semibold text-black sm:text:6xl sm:leading-relaxed'>Vegan foodie who loves to experiment with recipes</h2>
           <p className='text-xl mt-4 text-[#5c5c5c]'>
-            Lorem ipsum dolor sit  adipisicing elit. Saepe quos omnis sed enim dicta eaque nostrum nisi officia quidem molestiae.
+            Lorem ipsum dolot adipisicing elit. Saepe quos omnis sed enim dicta eaque nostrum nisi officia quidem molestiae.
             <br/><br/>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa distinctio aliquid eaque laudantium eius, minima quibusdam maiores est aspernatur dignissimos!
           </p>
