@@ -10,7 +10,7 @@ const AboutSection = () => {
           <p className='text-xl mt-4 text-[#5c5c5c]'>
             Lorem ipsum dolot Lorem, ipsum. adipisicing elit. Saepe quos omnis sed enim dicta eaque nostrum nisi officia quidem molestiae.
             <br/><br/>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa distinctio aliquid eaque laudantium eius, minima quibusdam maiores est aspernatur dignissimos!
+            Lorem  sit amet consectetur adipisicing elit. Culpa distinctio aliquid eaque laudantium eius, minima quibusdam maiores est aspernatur dignissimos!
           </p>
           <div className='lg:mt-0 lg:flex-shrink-0'>
             <div className='mt-4 inline-flex'>
